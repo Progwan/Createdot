@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>dotcreate demo</title>
+        <script src="main.js"></script>
+        <style>
+            canvas{
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>dotcreate demo</h1>
+        <canvas id="canvas" width="60" height="60"></canvas>
+        <script>
+            window.onload = ()=>{
+                var createdot = new Dot();
+                var width = 60;
+                var height = 60;
+                var content = [
+                    ["#ff0000","#00ff00","#0000ff","#ffff00","#ff00ff","#00ffff"],
+                    ["#00ff00","#0000ff","#ffff00","#ff00ff","#00ffff","#ff0000"],
+                    ["#0000ff","#ffff00","#ff00ff","#00ffff","#ff0000","#00ff00"],
+                    ["#ffff00","#ff00ff","#00ffff","#ff0000","#00ff00","#0000ff"],
+                    ["#ff00ff","#00ffff","#ff0000","#00ff00","#0000ff","#ffff00"],
+                    ["#00ffff","#ff0000","#00ff00","#0000ff","#ffff00","#ff00ff"]
+                ];
+                createdot.set(document.getElementById("canvas"), width, height, content);
+                createdot.create();
+            }
+
+        }
+        </script>
+    </body>
+</html>
