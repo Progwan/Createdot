@@ -3,7 +3,7 @@
 Apply dot picture with javascript.
 
 ### DEMO
-Pleas see "index.html".
+Pleas see "demo.html".
 
 ### Usage
 ``` html
